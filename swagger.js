@@ -15,6 +15,10 @@ const options = {
       description: 'A simple API for working with books',
     },
     servers: [{ url: '/' }],
+    tags: [
+      { name: 'Books', description: 'Book operations' },
+      { name: 'Authors', description: 'Author operations' }
+    ],
   },
   apis: ['./src/router.js', './app.js'],
 };
